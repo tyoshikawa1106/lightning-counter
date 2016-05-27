@@ -1,0 +1,6 @@
+<aura:component >
+  <aura:attribute name="countNum" type="Integer" />
+  <div class="counter-item-value-component">
+    <span class="slds-text-heading--large">$ {!v.countNum}</span>
+  </div>
+</aura:component>

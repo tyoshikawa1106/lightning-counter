@@ -1,0 +1,11 @@
+<aura:component >
+  <aura:attribute name="countNum" type="Integer" />
+  <tr className="counter-item-component">
+    <td>
+      <c:CounterItemValue countNum="{!v.countNum}" />
+    </td>
+    <td>
+      <c:CounterItemMenu countup="{!c.countup}" countdown="{!c.countdown}" />
+    </td>
+  </tr>
+</aura:component>

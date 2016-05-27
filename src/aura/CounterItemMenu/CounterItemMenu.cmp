@@ -1,0 +1,26 @@
+<aura:component >
+  <aura:attribute name="countup" type="Aura.Action" />
+  <aura:attribute name="countdown" type="Aura.Action" />
+  <div class="counter-item-menu-component">
+    <div class="slds-dropdown-trigger" aria-expanded="true">
+      <button class="slds-button slds-button--icon-border-filled" aria-haspopup="true">
+        <c:svg class="slds-button__icon slds-button__icon--hint" xlinkHref="/resource/SLDS104/assets/icons/utility-sprite/svg/symbols.svg#down" />
+        <span class="slds-assistive-text">Show More</span>
+      </button>
+      <div class="slds-dropdown slds-dropdown--right slds-dropdown--actions slds-dropdown--menu">
+        <ul class="dropdown__list" role="menu">
+          <li class="slds-dropdown__item">
+            <a onclick="{!v.countup}" role="menuitem">
+              <p class="slds-truncate">Up</p>
+            </a>
+          </li>
+          <li class="slds-dropdown__item">
+            <a onclick="{!v.countdown}" role="menuitem">
+              <p class="slds-truncate">Down</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</aura:component>

@@ -1,0 +1,22 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes">
+  <ltng:require styles="/resource/SLDS104/assets/styles/salesforce-lightning-design-system.css" />
+  <div class="counter-box-component">
+    <div class="slds">
+      <table class="slds-table slds-table--bordered" cellpadding="0" cellspacing="0" border="0">
+        <colgroup>
+          <col></col>
+          <col width="50"></col>
+        </colgroup>
+        <tbody>
+          <c:CounterItem countNum="0" />
+          <c:CounterItem countNum="1" />
+          <c:CounterItem countNum="2" />
+          <c:CounterItem countNum="3" />
+          <c:CounterItem countNum="4" />
+          <c:CounterItem countNum="5" />
+          <c:CounterItem countNum="6" />
+        </tbody>
+      </table>
+    </div>
+  </div>
+</aura:component>
